@@ -1,0 +1,46 @@
+{
+  "teleporters" : [
+    {
+      "name" : "google",
+      "app" : "open",
+      "args" : [
+        "-a",
+        "safari",
+        "http://google.com?q=hello"
+      ]
+    },
+    {
+      "name" : "scaff",
+      "app" : "code",
+      "args" : [
+        "/Users/feliperojas/dev/scaffolder/scaff"
+      ]
+    },
+    {
+      "name" : "books",
+      "app" : "open",
+      "args" : [
+        "-a",
+        "ibooks"
+      ]
+    },
+    {
+      "name" : "hells",
+      "app" : "code",
+      "args" : [
+        "/Users/feliperojas/dev/learn_2.0/books/hands-on-scala"
+      ]
+    },
+    {
+      "name" : "hello",
+      "app" : "open",
+      "args" : [
+        "-a",
+        "safari",
+        "http://google.com"
+      ]
+    }
+  ],
+  "envs" : [
+  ]
+}
