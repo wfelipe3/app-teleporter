@@ -42,5 +42,56 @@
     }
   ],
   "envs" : [
+    {
+      "name" : "scaff",
+      "teleporters" : [
+        {
+          "name" : "code",
+          "app" : "code",
+          "args" : [
+            "/Users/feliperojas/dev/scaffolder/scaff"
+          ]
+        },
+        {
+          "name" : "iterm",
+          "app" : "open",
+          "args" : [
+            "-a",
+            "iterm",
+            "/Users/feliperojas/dev/scaffolder/scaff"
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "clojure-workshop",
+      "teleporters" : [
+        {
+          "name" : "code",
+          "app" : "code",
+          "args" : [
+            "/Users/feliperojas/dev/learn_2.0/books/clojure-workshop"
+          ]
+        },
+        {
+          "name" : "iterm",
+          "app" : "open",
+          "args" : [
+            "-a",
+            "iterm",
+            "/Users/feliperojas/dev/learn_2.0/books/clojure-workshop"
+          ]
+        },
+        {
+          "name" : "book",
+          "app" : "open",
+          "args" : [
+            "-a",
+            "safari",
+            "https://learning.oreilly.com/library/view/the-clojure-workshop/9781838825485/"
+          ]
+        }
+      ]
+    }
   ]
 }

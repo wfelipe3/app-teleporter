@@ -13,7 +13,12 @@ import teleporter.services.{
   helloWorldService,
   openTeleporters,
   searchTeleporters,
-  saveTeleporter
+  saveTeleporter,
+  openEnvironment,
+  searchEnvs,
+  openTeleportersInEnvironment,
+  searchAll,
+  saveEnv
 }
 import cats.implicits._
 import teleporter.ports._
@@ -31,7 +36,15 @@ object Main extends zio.App:
       s <- BlazeServerBuilder[Task](global)
         .bindHttp(8080, "localhost")
         .withHttpApp(
-          (helloWorldService <+> openTeleporters <+> searchTeleporters <+> saveTeleporter).orNotFound
+          (helloWorldService
+            <+> openTeleporters
+            <+> searchTeleporters
+            <+> saveTeleporter
+            <+> openEnvironment
+            <+> searchEnvs
+            <+> openTeleportersInEnvironment
+            <+> searchAll
+            <+> saveEnv).orNotFound
         )
         .serve
         .compile
